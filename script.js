@@ -1,7 +1,7 @@
 const client = new Appwrite.Client();
 
 client
-    .setEndpoint('http://localhost.com/v1') 
+    .setEndpoint('https://cloud.appwrite.io/v1') 
     .setProject('672900e40025bbfbc904'); 
 
 const account = new Appwrite.Account(client);
