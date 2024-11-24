@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        background-image:url(gtn.png);
+        background-size: cover;
+        background-color: gray;
+    }
+    button{
+        background-color: gray;
+        font-size: 25px;
+        border-radius:8px;
+    }
+    input{
+        margin-top:80px;
+        color: black;
+        font-size:25px;
+        border-radius:8px;
+        background-color: gray;
+        transition: color 0.3s, transform 0.3s, textshadow 0.3s;
+        margin-right: 10px;
+    }
+    p{
+        margin-top:150px;
+        font-size:40px;
+        text-shadow: 0px 0px 10px black;
+        transition: color 0.3s, transform 0.3s, textshadow 0.3s;
+    }
+    h1 {
+            text-align: center;
+            font-size:60px;
+            animation: fadeIn 2s ease-in;
+            transition: color 0.3s, transform 0.3s, textshadow 0.3s;
+            text-shadow: 0px 0px 10px gray;
+          }
+        @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+    h1:hover{
+      color: purple;
+      text-shadow: 0px 0px 10px gray;
+      transform: scale(1.1);
+    }
+    p:hover{
+      color: black;
+      text-shadow: 0px 0px 10px black;
+      transform: scale(1.1);
+      transition: color 0.3s, transform 0.3s, textshadow 0.3s;
+    }
+    input:hover{
+      color: black;
+      text-shadow: 0px 0px 10px black;
+      transform: scale(1.1);
+      transition: color 0.3s, transform 0.3s, textshadow 0.3s;
+    }
+    button:hover{
+      color: black;
+      text-shadow: 0px 0px 10px black;
+      transform: scale(1.1);
+      transition: color 0.3s, transform 0.3s, textshadow 0.3s;
+    }
+</style>
+<body>
+    <h1>Guess the Number Game!</h1>
+    <p>I'm thinking of a number between 1 and 100.</p>
+    <input type="number" id="guessInput" placeholder="" min="1" max="100">
+    <button id="submitGuess">Submit Guess</button>
+    <div id="result"></div>
+    <button id="resetGame" style="display:none;">Play Again</button>
+
+    <script src="learningJAVAs.js"></script> 
+</body>
+</html>
